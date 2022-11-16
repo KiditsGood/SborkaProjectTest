@@ -1,4 +1,98 @@
 .header {
-	padding: 20px 0;
-	background: #ccc;
+  padding: 26px 30px 23px;
+  border-bottom: 1px solid #CFCFCF;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo{
+	display: flex;
+	align-items: flex-end;
+	font-size: 18px;
+	line-height: 18px;
+
+	&-icon{
+	  width: 44px;
+	  height: 29px;
+	}
+
+	&:hover{
+	  opacity: 0.5;
+	}
+  }
+
+  &__nav{
+	display: flex;
+	align-items: center;
+	gap: 32px;
+
+	&-item{
+	  font-size: 14px;
+	  line-height: 16px;
+	  position: relative;
+
+	  &:after{
+		content: '';
+		position: absolute;
+		height: 2px;
+		right: 50%;
+		bottom: -2px;
+		left: 50%;
+		background: #3366FF;
+		transition: 0.2s;
+	  }
+
+	  &:hover{
+		color: #3366FF;
+
+		&:after{
+		  left: 0;
+		  right: 0;
+		}
+	  }
+	}
+  }
+
+  &__buttons{
+	display: flex;
+	align-items: center;
+	gap: 26px;
+	position: relative;
+
+	&:after{
+	  content: '2';
+	  width: 13px;
+	  height: 13px;
+	  position: absolute;
+	  background: #3366FF;
+	  border-radius: 50%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  top: -6px;
+	  right: -6px;
+	  font-size: 10px;
+	  line-height: 12px;
+	  color: white;
+	}
+
+	&-item{
+	  width: 24px;
+	  transition: 0.2s;
+
+	  &:first-child{
+		height: 24px;
+	  }
+
+	  &:last-child{
+		height: 21px;
+	  }
+
+	  &:hover{
+		opacity: 0.5;
+		cursor: pointer;
+	  }
+	}
+  }
 }
