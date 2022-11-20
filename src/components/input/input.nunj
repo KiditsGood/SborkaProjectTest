@@ -1,0 +1,9 @@
+{% macro input(props) %}
+	<input
+			class="input{% if props.className %} {{ props.className }}{% endif %}"
+			type="{{ props.typeName }}"
+			placeholder="{{ props.placeholder }}"
+			required="{{ props.required }}"
+			maxlength="{{ props.maxlength }}"
+	>
+{% endmacro %}

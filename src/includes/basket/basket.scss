@@ -1,0 +1,36 @@
+.promo__form{
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+
+  &-input{
+	font-size: 14px;
+	line-height: 24px;
+	padding: 8px 10px;
+	box-sizing: border-box;
+	background: #EDEDF1;
+	border-radius: 3px;
+	width: 100%;
+
+	&::placeholder{
+	  color: rgba(142, 144, 166, 1);
+	}
+  }
+}
+.total{
+  gap: 0;
+}
+.total__item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.total__item-text{
+  font-size: 14px;
+  line-height: 34px;
+}
+.total__item-text.final{
+  font-size: 18px;
+  font-weight: 700;
+}

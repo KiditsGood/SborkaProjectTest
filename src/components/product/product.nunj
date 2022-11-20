@@ -1,0 +1,32 @@
+{% from "../icon/icon.nunj" import icon %}
+
+{% macro product() %}
+	<div class="basket__products">
+		{% for product in productItems %}
+		<div class="product">
+			<img src="{{ product.img }}" alt="" class="product__image">
+			<div class="product__info">
+				<p class="product__info-name">{{ product.title }}</p>
+				<div class="product__info-change">
+					<div class="value">
+						{{ icon({
+							iconName: 'minus',
+							className: 'value__button minus'
+						}) }}
+						<input type="text" class="value__input" value="1" maxlength="3"/>
+						{{ icon({
+							iconName: 'plus',
+							className: 'value__button plus'
+						}) }}
+					</div>
+					<p class="price">$ <span class="price__value">{{ product.price }}</span></p>
+				</div>
+			</div>
+			<div class="product__remove">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+{% endmacro %}

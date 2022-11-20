@@ -1,0 +1,36 @@
+.pay__form{
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  max-width: 550px;
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  margin-left: -30px;
+
+  &-item{
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	width: calc(25% - 22px);
+
+	&.take{
+	  margin-left: 9px;
+	}
+
+	&--name{
+	  font-size: 12px;
+	  font-weight: 500;
+	  line-height: 24px;
+	  color: rgba(85, 87, 112, 1);
+	}
+
+	&:first-child{
+	  width: 100%;
+	}
+  }
+}

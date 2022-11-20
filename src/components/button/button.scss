@@ -1,11 +1,35 @@
-.button {
-  @extend .transition-active;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+.button{
   font-size: 14px;
   line-height: 24px;
-  padding: 8px 30px;
-  color: white;
+  padding: 7px 29px;
+  border-radius: 3px;
+  transition: 0.2s;
+
+  &:hover{
+	cursor: pointer;
+  }
+
+  &--blue{
+	color: white;
+	background: #3366FF;
+	border: 1px solid #3366FF;
+
+	&:hover{
+	  border-color: rgba(207, 207, 207, 1);
+	  background: white;
+	  color: black;
+	}
+  }
+
+  &--border{
+	color: black;
+	background: white;
+	border: 1px solid rgba(207, 207, 207, 1);
+
+	&:hover{
+	  border-color: #3366FF;
+	  background: #3366ff;
+	  color: white;
+	}
+  }
 }

@@ -1,0 +1,62 @@
+<form action="" class="pay__form">
+	<div class="pay__form-item">
+		<p class="pay__form-item--name">Name on card</p>
+		{{ input ({
+			className: 'input--large pay__form-item--input',
+			type: 'text',
+			placeholder: 'Placeholder Text',
+			required: 'true',
+			maxlength: '50'
+		}) }}
+	</div>
+	<div class="pay__form-item">
+		<p class="pay__form-item--name">Card number</p>
+		{{ input ({
+			className: 'input--small pay__form-item--input',
+			type: 'text',
+			required: 'true',
+			maxlength: '4'
+		}) }}
+	</div>
+	<div class="pay__form-item take">
+		{{ input ({
+			className: 'input--small pay__form-item--input',
+			type: 'text',
+			required: 'true',
+			maxlength: '4'
+		}) }}
+	</div>
+	<div class="pay__form-item take">
+		{{ input ({
+			className: 'input--small pay__form-item--input',
+			type: 'text',
+			required: 'true',
+			maxlength: '4'
+		}) }}
+	</div>
+	<div class="pay__form-item take">
+		{{ input ({
+			className: 'input--small pay__form-item--input',
+			type: 'text',
+			required: 'true',
+			maxlength: '4'
+		}) }}
+	</div>
+	<div class="pay__form-item">
+		<p class="pay__form-item--name">Expire date</p>
+		{{ input ({
+			className: 'input--small pay__form-item--input',
+			type: 'text',
+			required: 'true'
+		}) }}
+	</div>
+	<div class="pay__form-item take">
+		<p class="pay__form-item--name">CVV code</p>
+		{{ input ({
+			className: 'input--small pay__form-item--input',
+			type: 'text',
+			required: 'true',
+			maxlength: '3'
+		}) }}
+	</div>
+</form>

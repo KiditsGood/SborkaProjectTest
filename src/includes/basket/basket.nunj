@@ -1,0 +1,40 @@
+{% from "../../components/product/product.nunj" import product %}
+
+<div class="container__right-item basket">
+	<p class="basket__title title">My basket</p>
+	{{ product() }}
+</div>
+<div class="container__right-item promo">
+	<p class="promo__title title">Promo code</p>
+	<form action="" class="promo__form">
+		{{ input ({
+			className: 'promo__form-input',
+			type: 'text',
+			placeholder: 'Placeholder Text',
+			maxlength: '10'
+		}) }}
+		{{ button ({
+			className: 'button--blue',
+			children: 'Apply',
+			type: 'button'
+		}) }}
+	</form>
+</div>
+<div class="container__right-item total">
+	<div class="total__item">
+		<p class="total__item-text">Subtotal</p>
+		<p class="total__item-text">$1 050</p>
+	</div>
+	<div class="total__item">
+		<p class="total__item-text">Tax</p>
+		<p class="total__item-text">$100</p>
+	</div>
+	<div class="total__item">
+		<p class="total__item-text">Shipping</p>
+		<p class="total__item-text">$150</p>
+	</div>
+	<div class="total__item">
+		<p class="total__item-text final">Total</p>
+		<p class="total__item-text final">$1 300</p>
+	</div>
+</div>

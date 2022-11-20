@@ -9,6 +9,11 @@
 // 	overwrite: 'auto',
 // });
 
+import './modules/stepper';
+import './modules/cartHandler';
+import './modules/priceHandler';
+import './modules/inputValidation';
+
 class ProjectApp {
 	constructor() {
 		this.env = require('./utils/env').default;

@@ -25,14 +25,16 @@
 		  "path": "#"
 		}
 	],
-	"someData": [
-		{
-			"title": "Item 1",
-			"text": "Desc 1"
-		},
-		{
-			"title": "Item 2",
-			"text": "Desc 2"
-		}
+	"productItems": [
+	  {
+		"title": "Amet minim mollit non deserunt ullamco est sit",
+		"price": "525",
+		"img": "assets/images/product1.png"
+	  },
+	  {
+		"title": "Amet minim mollit non",
+		"price": "525",
+		"img": "assets/images/product2.png"
+	  }
 	]
 }
