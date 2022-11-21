@@ -5,5 +5,7 @@
 			placeholder="{{ props.placeholder }}"
 			required="{{ props.required }}"
 			maxlength="{{ props.maxlength }}"
+			pattern="{{ props.pattern }}"
+			title="{{ props.title }}"
 	>
 {% endmacro %}

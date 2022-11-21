@@ -10,9 +10,9 @@
 // });
 
 import './modules/stepper';
-import './modules/cartHandler';
 import './modules/priceHandler';
 import './modules/inputValidation';
+import './modules/cartHandler';
 
 class ProjectApp {
 	constructor() {

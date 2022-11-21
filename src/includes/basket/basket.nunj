@@ -23,7 +23,7 @@
 <div class="container__right-item total">
 	<div class="total__item">
 		<p class="total__item-text">Subtotal</p>
-		<p class="total__item-text">$1 050</p>
+		<p class="total__item-text">$ <span class="sub">1 050</span></p>
 	</div>
 	<div class="total__item">
 		<p class="total__item-text">Tax</p>
@@ -35,6 +35,6 @@
 	</div>
 	<div class="total__item">
 		<p class="total__item-text final">Total</p>
-		<p class="total__item-text final">$1 300</p>
+		<p class="total__item-text final">$ <span class="final__value">1 300</span></p>
 	</div>
 </div>

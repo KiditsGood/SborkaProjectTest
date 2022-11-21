@@ -1,10 +1,12 @@
 .input{
   font-size: 14px;
   line-height: 24px;
-  padding: 8px 10px;
+  padding: 7px 9px;
   box-sizing: border-box;
   background: #EDEDF1;
   border-radius: 3px;
+  border: 1px solid #EDEDF1;
+  transition: 0.2s;
 
   &--large{
 	width: 100%;
@@ -16,5 +18,17 @@
 
   &::placeholder{
 	color: rgba(142, 144, 166, 1);
+  }
+
+  &:not(.expire, .cardholder, .promo__form-input):focus:invalid{
+	border-color: red;
+  }
+
+  &.expire:focus, &.cardholder:focus, &.promo__form-input:focus{
+	border-color: green;
+  }
+
+  &:focus:valid{
+	border-color: green;
   }
 }

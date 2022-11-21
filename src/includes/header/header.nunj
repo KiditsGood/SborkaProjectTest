@@ -4,8 +4,7 @@
 	<a href="/" class="header__logo">
 		{{ icon({
 			iconName: 'logo',
-			className: 'header__logo-icon',
-			attributes: 'viewBox="0 0 20 20" style="width: 44px; height: 29px; fill: black;"'
+			className: 'header__logo-icon'
 		}) }}
 		.shop
 	</a>
@@ -13,13 +12,15 @@
 	<div class="header__buttons">
 		{{ icon({
 			iconName: 'search',
-			className: 'header__buttons-item',
-			attributes: 'viewBox="0 0 20 20" style="width: 44px; height: 29px; fill: black;"'
+			className: 'header__buttons-item'
 		}) }}
 		{{ icon({
 			iconName: 'cart',
-			className: 'header__buttons-item',
-			attributes: 'viewBox="0 0 20 20" style="width: 44px; height: 29px; fill: black;"'
+			className: 'header__buttons-item'
+		}) }}
+		{{ icon({
+			iconName: 'burger',
+			className: 'header__buttons-item burger'
 		}) }}
 	</div>
 </header>

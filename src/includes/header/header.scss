@@ -27,6 +27,12 @@
 	align-items: center;
 	gap: 32px;
 
+	@media (min-width: 768px) and (max-width: 1199px){
+	  &{
+		display: none;
+	  }
+	}
+
 	&-item{
 	  font-size: 14px;
 	  line-height: 16px;
@@ -70,11 +76,17 @@
 	  display: flex;
 	  align-items: center;
 	  justify-content: center;
-	  top: -6px;
-	  right: -6px;
+	  top: -5px;
+	  right: -5px;
 	  font-size: 10px;
 	  line-height: 12px;
 	  color: white;
+
+	  @media (min-width: 768px) and (max-width: 1199px){
+		&{
+		  right: 50px;
+		}
+	  }
 	}
 
 	&-item{
@@ -85,8 +97,18 @@
 		height: 24px;
 	  }
 
-	  &:last-child{
+	  &:nth-child(2){
 		height: 21px;
+	  }
+
+	  &.burger{
+		width: 29px;
+		height: 22px;
+		display: none;
+
+		@media (min-width: 768px) and (max-width: 1199px){
+		  display: block;
+		}
 	  }
 
 	  &:hover{
